@@ -37,7 +37,25 @@
 {margin-top:20px;
 }*/
 
-#admin-page{
+#admin-page {
 	padding-top: 0;
+	
+}
+
+.nested-comment {
+	
+	margin-top: 60px;
+	
+}
+
+.comment-reply-container {
+	
+	display: none;
+	
+}
+
+.comment-reply {
+	
+	display: none;
 	
 }
