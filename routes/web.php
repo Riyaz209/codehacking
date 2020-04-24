@@ -65,3 +65,14 @@ Route::group(['middleware'=>'auth'], function(){
 
 
 Route::get('/logout', 'Auth\LoginController@logout');
+
+/*
+Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
+'\vendor\unisharp\laravel-filemanager\Lfm::routes()';
+
+});*/
+
+
+Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
+     \UniSharp\LaravelFilemanager\Lfm::routes();
+ });
