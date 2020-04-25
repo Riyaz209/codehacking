@@ -132,7 +132,9 @@ class AdminPostsController extends Controller
 			
 		}
 		
-		Auth::user()->posts()->whereId($id)->first()->update($input);
+		//Auth::user()->posts()->whereId($id)->first()->update($input);
+		
+		Post::findOrFail($id)->update($input);
 		
 		return redirect('/admin/posts');
 		
